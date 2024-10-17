@@ -44,33 +44,33 @@ Para generar el lexer, el parser y el visitor, ejecute el siguiente comando en l
 java -jar /home/antony_barahona/Descargas/antlr-4.13.2-complete.jar -Dlanguage=Python3 -visitor OperacionesComplejas.g4
 ```
 
-Este comando generará los siguientes archivos:
+### Este comando generará los siguientes archivos:
 
 - OperacionesComplejasLexer.py
 - OperacionesComplejasParser.py
 - OperacionesComplejasVisitor.py
 
-Crear el Archivo de Entrada input.txt
-El archivo input.txt debe contener las operaciones con números complejos que deseas ejecutar. A continuación se muestra un ejemplo del contenido que puedes colocar en input.txt:
+### Crear el Archivo de Entrada input.txt
+El archivo input.txt debe contener las operaciones con números complejos que desea ejecutar. A continuación se muestra un ejemplo del contenido que puede colocar en input.txt:
 
-go
-Copiar código
+```bash
 (3 + 2i) + (1 + 4i)
 (5 - 3i) * (2 + 2i)
 (6 + 2i) / (2 + 1i)
+```
 Cada línea es una operación entre dos números complejos.
 
-Ejecutar la Calculadora
-Con todos los archivos generados y el archivo input.txt listo, ejecuta el archivo main.py utilizando el siguiente comando:
+### Ejecutar la Calculadora
+Con todos los archivos generados y el archivo input.txt listo, ejecute el archivo main.py utilizando el siguiente comando:
 
-bash
-Copiar código
+```bash
 python3 main.py
-Este comando procesará las operaciones del archivo input.txt y mostrará el resultado de cada una en la terminal. Por ejemplo, para las operaciones mencionadas anteriormente, los resultados podrían ser algo similar a:
+```
+Este comando procesará las operaciones del archivo input.txt y mostrará el resultado de cada una en la terminal. Por ejemplo, para las operaciones mencionadas anteriormente, los resultados deberias ser algo similar a:
 
-yaml
-Copiar código
+```bash
 El resultado de la operación es: 4 + 6j
 El resultado de la operación es: 16 + 4j
 El resultado de la operación es: 4.0 + 1.0j
+```
 
